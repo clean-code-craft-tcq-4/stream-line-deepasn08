@@ -18,7 +18,7 @@ jobs:
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testsender Sender_Data_tester.c Sensor_Data_sender.c
     
     - name: build receiver 
-      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testreceiver Receiver_test.c Receiver.c
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testreceiver Receiver_Test.c Receiver.c
 
     - name: run sender
       run: ./testsender
