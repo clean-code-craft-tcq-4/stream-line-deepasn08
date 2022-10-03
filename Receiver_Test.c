@@ -33,9 +33,9 @@ TEST_CASE("Tests to check whether sensor data is read from console and also to c
   expectedMaxValue = 500;
   expectedMinValue = 10;
   expectedSMAValue = 480;
-  observedMaxValue = getMaxValue(&SOC_value[0]);
-  observedMinValue = getMinValue(&SOC_value[0]);
-  observedSMAValue = calculateSimpleMovingAverage(&SOC_value[0]);
+  observedMaxValue = fetchMaxValue(&SOC_value[0]);
+  observedMinValue = fetchMinValue(&SOC_value[0]);
+  observedSMAValue = calculateMovingAverage(&SOC_value[0]);
   REQUIRE(observedMaxValue == expectedMaxValue);
   REQUIRE(observedMinValue == expectedMinValue);
   REQUIRE(observedSMAValue == expectedSMAValue);
