@@ -5,7 +5,7 @@ void readDataFromConsole(float* Temperature, float* SOC)
 {
   for(int index = 0; index < readings_count; index++)
   {
-    scanf("%d,%d\n",&Temperature[index],&SOC[index]);    
+    scanf("%.f,%.f \n",&Temperature[index],&SOC[index]);    
   }
 }
 
