@@ -11,7 +11,7 @@ void displaySenderData(status *ptr_Status, BatteryParameters BatteryParam){
 	*ptr_Status = NOT_OK;
 	int index = 0;
 	for(index = 0; index < NUM_OF_READINGS; index++){
-		printf("%d,%d\n",BatteryParam.temperature[index],BatteryParam.soc[index]);
+		printf("\nTemperature: %.f, SOC: %.f",BatteryParam.temperature[index],BatteryParam.soc[index]);
 	}
 	*ptr_Status = OK;
 }
